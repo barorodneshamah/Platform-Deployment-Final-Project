@@ -1,0 +1,15 @@
+.git
+.gitignore
+.editorconfig
+*.md
+tests/
+var/cache/
+var/log/
+var/sessions/
+node_modules/
+.env.local
+.env.test
+.env.*.local
+compose-disable.yaml
+compose.override-disable.yaml
+phpunit.dist.xml

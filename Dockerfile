@@ -41,6 +41,8 @@ RUN composer install \
 
 COPY . .
 
+RUN composer dump-autoload --optimize --no-dev
+
 RUN APP_ENV=prod APP_SECRET=build-placeholder \
         php bin/console assets:install --no-debug \
     && APP_ENV=prod APP_SECRET=build-placeholder \
